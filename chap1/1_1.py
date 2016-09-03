@@ -1,4 +1,7 @@
+import numpy
+import matplotlib
 from nltk.book import *
+from nltk.draw.dispersion import dispersion_plot
 
 # helper line breaks
 lb1 = '====================================================='
@@ -32,3 +35,9 @@ print(lb2)
 print(text3.similar('king'))
 print(lb1)
 print(text5.common_contexts(['love', 'fuck']))
+
+# print dispersion plot
+dispersion_plot(text4, ['citizens', 'democracy', 'freedom', 'duties', 'America'])
+
+# expolore dispersion_plot
+dispersion_plot(text6, ['spam', 'king', 'grail', 'rabbit', 'ni'])
